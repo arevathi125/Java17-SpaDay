@@ -24,6 +24,7 @@ public class UserController {
               return "user/index.html";
         }
         else {
+            model.addAttribute("error", "Passwords does not match");
            return "user/add.html";
         }
     }

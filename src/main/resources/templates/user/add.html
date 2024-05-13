@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
-<head th:fragments="head">
+<head th:replace="fragments :: head">
     <meta charset="UTF-8"/>
-    <title></title>
+    <title>Sign Up Form</title>
 </head>
 <body>
 
@@ -28,7 +28,10 @@
          </label>
      </div>
      <div class="form-group">
-         <input type="submit" value="Submit" />
+     <p class="error"  th:text="${error}"></p>
+     </div>
+     <div class="form-group">
+         <input type="submit" value="Sign Up" />
      </div>
  </form>
 </body>
