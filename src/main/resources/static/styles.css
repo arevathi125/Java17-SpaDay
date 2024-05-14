@@ -25,6 +25,6 @@ table {
             text-align: center;
 }
 
-error {
+.error {
     color: red;
 }
